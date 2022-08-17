@@ -1,6 +1,3 @@
-from unicodedata import name
-
-
 class Dog:
     def __init__(self, name, owner, birthDay, furColor, breed):
         self.name = name
