@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Atividade aula 01</h1>
+    <h2 style="font-weight: normal;">Listagem de cachorros do pet shop: <b>{{ petShopName }}</b></h2>
+    <table border="1">
+        <tr>
+            <th>Nome do cachorro</th>
+            <th>Nome do dono</th>
+            <th>Data de aniversario do cachorro</th>
+            <th>Cor da pelagem</th>
+            <th>Raça</th>
+        </tr>
+        {%for dog in dogs%}
+            <tr>
+                <td>{{dog.name}}</td>
+                <td>{{dog.owner}}</td>
+                <td>{{dog.birthDay}}</td>
+                <td>{{dog.furColor}}</td>
+                <td>{{dog.breed}}</td>
+            </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
